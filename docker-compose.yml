@@ -1,0 +1,21 @@
+version: "3.7"
+
+services:
+  backend:
+    build:
+      context: "./Backend"
+    volumes:
+      - ./Backend:/app
+      - /app/node_modules
+
+    ports:
+      - "5000:5000"
+  frontend:
+    build:
+      context: "./Frontend"
+    volumes:
+      - ./Frontend:/app
+      - /app/node_modules
+
+    ports:
+      - "3000:5173"
