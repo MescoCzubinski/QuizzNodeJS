@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "question": "What does REST stand for in REST API?",
+    "question": "what does REST stand for in REST API?",
     "options": [
       "Representational State Transfer",
       "Random Endpoint System Transfer",
@@ -12,49 +12,49 @@
   },
   {
     "id": 2,
-    "question": "Which HTTP method is used to retrieve data from a server?",
+    "question": "which HTTP method is used to retrieve data from a server?",
     "options": ["POST", "GET", "DELETE", "PATCH"],
     "answer": "GET"
   },
   {
     "id": 3,
-    "question": "Which status code means 'Resource not found'?",
+    "question": "which status code means 'Resource not found'?",
     "options": ["200", "201", "404", "500"],
     "answer": "404"
   },
   {
     "id": 4,
-    "question": "Which format is most commonly used in REST API responses?",
+    "question": "which format is most commonly used in REST API responses?",
     "options": ["CSV", "XML", "JSON", "YAML"],
     "answer": "JSON"
   },
   {
     "id": 5,
-    "question": "Which HTTP method is used to create a new resource?",
+    "question": "which HTTP method is used to create a new resource?",
     "options": ["GET", "POST", "PUT", "DELETE"],
     "answer": "POST"
   },
   {
     "id": 6,
-    "question": "Which HTTP method is used to completely replace an existing resource?",
+    "question": "which HTTP method is used to completely replace an existing resource?",
     "options": ["PATCH", "PUT", "OPTIONS", "HEAD"],
     "answer": "PUT"
   },
   {
     "id": 7,
-    "question": "Which status code indicates 'Unauthorized'?",
+    "question": "which status code indicates 'Unauthorized'?",
     "options": ["400", "401", "403", "405"],
     "answer": "401"
   },
   {
     "id": 8,
-    "question": "Which HTTP method is used to delete a resource?",
+    "question": "which HTTP method is used to delete a resource?",
     "options": ["DELETE", "REMOVE", "ERASE", "DROP"],
     "answer": "DELETE"
   },
   {
     "id": 9,
-    "question": "Which principle of REST states that the server does not store client context?",
+    "question": "which principle of REST states that the server does not store client context?",
     "options": [
       "Scalability",
       "Statelessness",
@@ -65,13 +65,13 @@
   },
   {
     "id": 10,
-    "question": "Which status code indicates a successful request with no content returned?",
+    "question": "which status code indicates a successful request with no content returned?",
     "options": ["200", "201", "204", "304"],
     "answer": "204"
   },
   {
     "id": 11,
-    "question": "Which data structure uses LIFO (Last In, First Out) principle?",
+    "question": "which data structure uses LIFO (Last In, First Out) principle?",
     "options": ["Queue", "Stack", "Array", "Linked List"],
     "answer": "Stack"
   }

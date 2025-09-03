@@ -19,10 +19,24 @@ app.get("/questions", (req, res) => {
 
 app.post("/submit", (req, res) => {
   const answers = req.body;
-  console.log("Received answers:", answers);
 
-  res.json({ message: "Answers received" });
+  res.json({ score: checkAnswers(answers) });
 });
+
+function checkAnswers(userAnswers) {
+  const userAnswersMap = {};
+  for (const userAnswer of userAnswers) {
+    userAnswersMap[userAnswer.id] = userAnswer.answer;
+  }
+
+  let score = 0;
+  for (const { id, answer } of data) {
+    if (userAnswersMap[id] === answer) {
+      score++;
+    }
+  }
+  return score;
+}
 
 app.listen(PORT, () => {
   console.log(`Backend running at http://localhost:${PORT}`);

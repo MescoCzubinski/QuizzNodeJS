@@ -12,11 +12,11 @@ export default function Question({
   setQuestionIndex: (index: number) => void;
 }) {
   return (
-    <div key={question.id}>
-      <h2>{question.question}</h2>
-      <ul>
+    <div key={question.id} className="flex flex-col gap-y-6">
+      <h1># {question.question}</h1>
+      <div className="flex w-full flex-col items-start gap-y-3 cursor-pointer">
         {question.options.map((option, index) => (
-          <li
+          <p
             key={index}
             onClick={() => {
               setAnswers((prev) => [
@@ -26,10 +26,10 @@ export default function Question({
               setQuestionIndex(questionIndex + 1);
             }}
           >
-            {option}
-          </li>
+            {index + 1}. {option}
+          </p>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
