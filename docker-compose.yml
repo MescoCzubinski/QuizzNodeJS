@@ -3,22 +3,25 @@ version: "3.7"
 services:
   backend:
     build:
-      context: "./Backend"
+      context: "./backend"
     environment:
-      - PORT=5000
-      - FRONTEND_URL=http://localhost:3000
-
+      - PORT=${PORT}
+      - URL=${URL}
     ports:
       - "5000:5000"
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+    command: npm run start
+
   frontend:
     build:
-      context: "./Frontend"
+      context: "./frontend"
     environment:
-      - VITE_API_URL=http://localhost:5000
+      - VITE_API_URL=${VITE_API_URL}
     volumes:
-      - ./Frontend:/app
+      - ./frontend:/app
       - /app/node_modules
-
     ports:
-      - "3000:5173"
+      - "5173:5173"
     command: npm run dev
